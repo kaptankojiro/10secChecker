@@ -24,6 +24,6 @@ echo  ""
 echo "RAM Status"
 free | awk '/Mem/{printf("used: %.2f%"), $3/$2*100} /buffers\/cache/{printf(", buffers: %.2f%"), $4/($3+$4)*100} /Swap/{printf(", swap: %.2f%"), $3/$2*100}'
 
-sleep 5
+sleep 10
 
 done
